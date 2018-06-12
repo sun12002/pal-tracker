@@ -1,0 +1,25 @@
+/*buildscript {
+    repositories {
+        maven { url "http://platform-acceleration-lab-maven.s3.amazonaws.com" }
+        jcenter()
+    }
+
+    dependencies {
+        compile("org.springframework.boot:spring-boot-starter-web")
+    }
+}*/
+
+plugins {
+    id "java"
+    id "org.springframework.boot" version "1.5.13.RELEASE"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    //testCompile('junit:junit:4.12')
+}
+
