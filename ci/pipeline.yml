@@ -5,7 +5,7 @@ resources:
   source:
     uri: {{github-repository}}
     branch: master
-    private_key: {{github-private-key}}
+    private_key: {{M}}
 
 - name: pal-tracker-artifacts
   type: s3
