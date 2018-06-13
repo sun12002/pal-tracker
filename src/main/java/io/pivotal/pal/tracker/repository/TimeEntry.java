@@ -14,23 +14,6 @@ public class TimeEntry {
 
     public TimeEntry() {}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        TimeEntry timeEntry = (TimeEntry) o;
-        return projectId == timeEntry.projectId &&
-                userId == timeEntry.userId &&
-                hours == timeEntry.hours &&
-                Objects.equals(date, timeEntry.date);
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(projectId, userId, date, hours);
-    }
-
     public TimeEntry(long projectId, long userId, LocalDate date, int hours){
         this.projectId = projectId;
         this.userId = userId;
@@ -45,6 +28,22 @@ public class TimeEntry {
         this.userId = userId;
         this.date = date;
         this.hours = hours;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TimeEntry timeEntry = (TimeEntry) o;
+        return projectId == timeEntry.projectId &&
+                userId == timeEntry.userId &&
+                hours == timeEntry.hours &&
+                Objects.equals(date, timeEntry.date);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(projectId, userId, date, hours);
     }
 
     public long getId() {

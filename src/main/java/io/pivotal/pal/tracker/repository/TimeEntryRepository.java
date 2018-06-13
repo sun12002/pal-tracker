@@ -1,7 +1,5 @@
 package io.pivotal.pal.tracker.repository;
 
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
 
 public interface TimeEntryRepository {
