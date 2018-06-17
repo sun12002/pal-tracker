@@ -1,1 +1,9 @@
 language: java
+deploy:
+  provider: cloudfoundry
+  username: sufiannazim92@gmail.com
+  password:
+    secure: NddFfpF4x+IXwyvLLzvRw0ogZ/P2ahMFBukAI3evof1zwD/l78c34wvMMR4mI9n76AdyVA+o57IZcnAPaav+HRPoYj+GqKxz1Dp2bxe8U6YmgpNPTw8/Tb+4ALOV2Z5Qshat68suhH6wMooNnzHlUVKYTcA0ucJPzRmBu3R41t64Yvevybc0QfpA1CBWD6a2ZnmQljnhx0Cd62+Sc4abNgXCytsBfJ/gyihebelDWPiN8WM1ghK6QpQWNdHR824g9uMBOd3SyJ4CZ1AO4cdSQo/RdHNkLj5A4QyZ+wCfoV8hCI5/6dpsawBcOfqM3xcf+mAmioBaepz2/LCBrLqFLt8HaBSpfo7ubVS3jc3nFc4b7r2znFU9PdPrHefyOrAbsqxB8O+M9OCY4yxiiz70QZlu69k3rJMIgqhFOiJSondAFcKJT8Lg3g1Lg/O1pG8hDfeRewayIkuPGODZ0kNaxscW2d55cdNmTlYlJXAPVC+foItWsHO2EwKTO+3aN4BK9IY4Kqo1pmU2cEOrcIxOLfpjV9DnXCTGfKGu4AWf+AGECYz0GYCWczmy8T4nngO6hXaU1U7XxBzYDYp7vA8yL3fRdF/xQZ/xzHRTPOR6Fnk2bI0tX7QrDqZ4tSUUAVvCnrPWMlDXiXo79RK8BkGrSNHVR9kRl5XXdRKJeTai/S8=
+  api: https://api.run.pivotal.io
+  organization: learn-experiment-org
+  space: development
